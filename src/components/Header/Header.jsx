@@ -11,7 +11,7 @@ export default class Header extends React.Component {
         </div>
 
         <div className="contribute">
-          <a href="https://github.com">
+          <a href="https://github.com/yuricd/presoounao-frontend" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github" />
           </a>
         </div>
