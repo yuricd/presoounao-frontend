@@ -1,0 +1,14 @@
+@import '../../styles/default'; 
+
+.content {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-bar {
+  background: #212121;
+  height: 50vh;
+}

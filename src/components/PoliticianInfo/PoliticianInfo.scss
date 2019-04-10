@@ -1,0 +1,107 @@
+@import '../../styles/default'; 
+
+.politician-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .default-btn {
+    position: fixed;
+    bottom: 1em;
+  }
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 .7em;
+}
+
+.info {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  background: #212121;
+  height: auto;
+
+  .picture {
+    width: 20vh;
+    margin-right: 20px;
+    position: relative;
+
+    img {
+      width: 100%;
+      border: 5px solid #FFF;
+      border-radius: 10px;
+    }
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      color: #FFF;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    h4 {
+      color: #CCC;
+      font-weight: 300;
+      font-size: .85rem;
+      margin-bottom: 15px;
+    }
+
+    .arrested {
+      color: #FFF;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: .7rem;
+    }
+
+    .bottom {
+      margin: 15px 0;
+
+      button {
+        text-align: center;
+        background: $red;
+        border-radius: 20px;
+        padding: 7px 15px;
+        color: #FFF;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.details {
+  background: #FFF;
+  width: 80%;
+  margin: 1em 0 4em;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  font-size: .9rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.references {
+  margin-top: 1.5em;
+
+  h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  ol {
+    margin-left: 20px;
+  }
+}

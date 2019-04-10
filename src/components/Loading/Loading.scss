@@ -1,0 +1,21 @@
+@import '../../styles/default'; 
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  .icon {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.3rem;
+    animation: spin infinite linear 2s;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0) }
+    100% {transform: rotate(360deg)};
+  }
+}

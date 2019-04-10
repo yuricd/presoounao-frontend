@@ -1,0 +1,34 @@
+@import '../../styles/default'; 
+
+.politician-card {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  width: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .picture {
+    background: #FFF;
+    width: 80%;
+    height: 35vh;
+    overflow: hidden;
+    border: 5px solid #FFF;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+
+  h4 {
+    color: #888;
+    font-weight: 300;
+  }
+}

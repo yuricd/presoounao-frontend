@@ -1,0 +1,28 @@
+@import '../../styles/default'; 
+
+.options {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  &.disabled {
+    opacity: .2;
+  }
+
+  .option {
+    background: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+  }
+
+  .handcuff {
+    background: #212121;
+  }
+
+  .free {
+    background: #FFF;
+  }
+}

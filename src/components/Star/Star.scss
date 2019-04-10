@@ -1,0 +1,21 @@
+@import '../../styles/default'; 
+
+.star {
+  position: absolute;
+  top: -50px;
+  right: -10px;
+  width: 90px;
+  height: 90px;
+  background: url('../../assets/star.png') center no-repeat;
+
+  .score {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #846F01;
+    margin-top: 3px;
+  }
+}

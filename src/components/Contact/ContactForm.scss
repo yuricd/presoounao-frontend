@@ -1,0 +1,28 @@
+@import '../../styles/default'; 
+
+.contact-form {
+  display: flex;
+  margin-top: 10px;
+
+  form {
+    display: flex;
+
+    textarea {
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+      resize: vertical;
+      padding: 5px 10px;
+      min-height: 50px;
+      background: #464646;
+      color: #EEE;
+      font-size: .9rem;
+      border-radius: 10px 0 0 10px;
+    }
+
+    button.send {
+      border-radius: 0 10px 10px 0!important;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+}

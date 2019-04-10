@@ -1,0 +1,44 @@
+@import '../../styles/default'; 
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  color: #FFF;
+  padding: 15px;
+
+  .contribute {
+    font-size: 1.3rem;
+  }
+}
+
+.button-menu {
+  color: #FFF;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.drop-menu {
+  padding: 20px 0;
+  z-index: -1;
+  position: fixed;
+  color: #FFF;
+  background: #111;
+  width: 100%;
+  text-align: center;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: block;
+      
+      a {
+        color: #FFF;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
