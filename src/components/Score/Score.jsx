@@ -1,6 +1,5 @@
 import React from 'react';
 import './Score.scss';
-import { API_URL } from '../../config';
 
 export const Score = (props) => {
   const { score, total, handleRestart } = props;
@@ -15,7 +14,7 @@ export const Score = (props) => {
         (percentual >= .5 && percentual < .8) ? <h3>Você até que tem algum conhecimento, mas ainda não é suficiente para entender a mentalidade dos ministros.</h3> : 
         (percentual >= .3 && percentual < .5) ? <h3>Talvez política pareça uma grande confusão pra você, mas não se preocupe, realmente é.</h3> :
         (percentual < .3) ? <h3>Sua pontuação é a nota que você daria para os políticos?</h3> : ''}
-        <a href={`https://www.facebook.com/sharer/sharer.php?u=${API_URL}&quote=Eu acertei ${score} de ${total} políticos! E você, consegue dizer quem está preso?`} target="_blank" rel="noopener noreferrer" className="default-btn">Compartilhe!</a>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=${process.env.REACT_APP_API_URL}&quote=Eu acertei ${score} de ${total} políticos! E você, consegue dizer quem está preso?`} target="_blank" rel="noopener noreferrer" className="default-btn">Compartilhe!</a>
         <button className="default-btn" onClick={handleRestart}>Jogar novamente</button>
       </div>
     </div>

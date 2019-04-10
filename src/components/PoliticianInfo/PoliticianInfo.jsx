@@ -1,6 +1,5 @@
 import React from 'react';
 import './PoliticianInfo.scss';
-import { API_URL } from '../../config';
 import ContactForm from '../Contact/ContactForm';
 
 export default class PoliticianInfo extends React.Component {
@@ -22,7 +21,7 @@ export default class PoliticianInfo extends React.Component {
         <div className="info">
           <div className="info-wrapper">
             <div className="picture">
-              <img src={`${API_URL}static/pictures/${picture}`} alt={name} />
+              <img src={`${process.env.REACT_APP_API_URL}/static/pictures/${picture}`} alt={name} />
             </div>
 
             <div className="description">

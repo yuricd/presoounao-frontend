@@ -1,7 +1,6 @@
 import React from 'react';
 import { Star } from '../Star/Star';
 import './PoliticianCard.scss';
-import { API_URL } from '../../config';
 import { Loading } from '../Loading/Loading';
 
 export default class PoliticianCard extends React.Component {
@@ -25,7 +24,7 @@ export default class PoliticianCard extends React.Component {
         <Star score={score} />
         <div className="picture">
           {(!imgLoaded) && <Loading />}
-          <img src={`${API_URL}static/pictures/${picture}`} alt="" onLoad={this.handleImgLoad} />
+          <img src={`${process.env.REACT_APP_API_URL}/static/pictures/${picture}`} alt="" onLoad={this.handleImgLoad} />
         </div>
         <h2>{ name }</h2>
         <h4>{ position }</h4>

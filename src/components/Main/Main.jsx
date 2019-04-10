@@ -8,12 +8,6 @@ import SelectOption from '../SelectOption/SelectOption';
 import PoliticianInfo from '../PoliticianInfo/PoliticianInfo';
 import { Score } from '../Score/Score';
 import { Intro } from '../Intro/Intro';
-import { API_URL } from '../../config';
-
-/**
- * TODO
- * Atualizar status
- */
 
 export default class Main extends React.Component {
 
@@ -46,7 +40,7 @@ export default class Main extends React.Component {
   }
 
   async componentDidMount() {
-    const res = await axios.get(`${API_URL}politicians/?getIds=true`);
+    const res = await axios.get(`${process.env.REACT_APP_API_URL}/politicians/?getIds=true`);
     const ids = res.data.map(item => item._id);
     const idList = this.shuffle(ids);
     this.setState({total: idList.length});
@@ -101,7 +95,7 @@ export default class Main extends React.Component {
   }
 
   loadPolitician = async (id) => { 
-    const res = await axios.get(`${API_URL}politicians/${id}`);
+    const res = await axios.get(`${process.env.REACT_APP_API_URL}/politicians/${id}`);
     const politician = res.data;
     this.setState({ politician, isLoading: false });
   }
